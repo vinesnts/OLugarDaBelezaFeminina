@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cbf42e53-b228-47c7-9e34-83875c6a5475" name="Default Changelist" comment="" />
+    <list default="true" id="cbf42e53-b228-47c7-9e34-83875c6a5475" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/features/Produto.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/features/Servico.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/features/support/env.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,15 +18,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/features/Produto.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1470">
+              <caret line="98" column="26" selection-start-line="98" selection-start-column="26" selection-end-line="98" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/features/Servico.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="70" selection-start-line="70" selection-end-line="76" selection-end-column="63" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/features/Produto.feature" />
+        <option value="$PROJECT_DIR$/features/Servico.feature" />
+      </list>
+    </option>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -49,6 +75,11 @@
               <item name="OLugarDaBelezaFeminina" type="b2602c69:ProjectViewProjectNode" />
               <item name="OLugarDaBelezaFeminina" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="OLugarDaBelezaFeminina" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OLugarDaBelezaFeminina" type="462c0819:PsiDirectoryNode" />
+              <item name="features" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -63,6 +94,8 @@
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="rails server" />
+      <command value="cucumber --init" />
+      <command value="cucumber" />
     </option>
   </component>
   <component name="RunDashboard">
@@ -215,12 +248,12 @@
       <option name="presentableId" value="Default" />
       <updated>1543277191427</updated>
       <workItem from="1543277195868" duration="83000" />
-      <workItem from="1543277280655" duration="788000" />
+      <workItem from="1543277280655" duration="5412000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="871000" />
+    <option name="totallyTimeSpent" value="5495000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -232,14 +265,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2" y="0" width="1364" height="737" extended-state="7" />
+    <frame x="-2" y="0" width="1364" height="737" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24885845" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17047185" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32899022" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35993487" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -269,7 +303,25 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/Produto.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1470">
+          <caret line="98" column="26" selection-start-line="98" selection-start-column="26" selection-end-line="98" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/Servico.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="70" selection-start-line="70" selection-end-line="76" selection-end-column="63" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
