@@ -77,6 +77,11 @@
               <item name="OLugarDaBelezaFeminina" type="b2602c69:ProjectViewProjectNode" />
               <item name="OLugarDaBelezaFeminina" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="OLugarDaBelezaFeminina" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OLugarDaBelezaFeminina" type="462c0819:PsiDirectoryNode" />
+              <item name="features" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -102,6 +107,8 @@
   <component name="RunAnythingCache">
     <option name="b">
       <command value="rails server" />
+      <command value="cucumber --init" />
+      <command value="cucumber" />
     </option>
   </component>
   <component name="RunDashboard">
