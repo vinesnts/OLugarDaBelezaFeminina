@@ -18,6 +18,7 @@
 !/tmp/.keep
 
 /node_modules
+/.idea/*
 /yarn-error.log
 
 .byebug_history
