@@ -57,3 +57,50 @@ end
 Then("Eu vejo uma mensagem de erro de tamanho de senha insuficiente") do
   expect(page).to have_content("Password is too short")
 end
+
+
+# Serviço
+Given("Eu estou na pagina de servico") do
+  visit 'servicos/'
+end
+
+And("Eu clico em novo servico") do
+  click_link 'New Servico'
+end
+
+When("Eu preencho o campo nome com {string} o campo preco com {float} e o campo descricao com {string}") do |nome, preco, descricao|
+  fill_in 'servico[nome]', with: nome
+  fill_in 'servico[preco]', with: preco
+  fill_in 'servico[descricao]', with: preco
+
+end
+
+And("Eu clico em salvar servico") do
+  click_button 'Create Servico'
+end
+
+Then("Eu vejo que o servico com nome {string} foi salvo") do |nome|
+  expect(page).to have_content(nome)
+end
+
+When("Eu preencho o campo nome com {string} o campo preco com {string} e o campo descricao com {string}") do |nome, preco, descricao|
+  fill_in 'servico[nome]', with: nome
+  fill_in 'servico[preco]', with: preco
+  fill_in 'servico[descricao]', with: preco
+end
+
+Then("Eu vejo uma mensagem de erro de preco vazio") do
+  expect(page).to have_content("Preco can't be blank")
+end
+
+Then("Eu vejo uma mensagem de erro de preco zerado") do
+  expect(page).to have_content("Preco must be greater than 0")
+end
+
+Then("Eu vejo uma mensagem de erro de preco negativo") do
+  expect(page).to have_content("Preco must be greater than 0")
+end
+
+Then("Eu vejo uma mensagem de erro de preco invalido") do
+  expect(page).to have_content("Preco is not a number")
+end
