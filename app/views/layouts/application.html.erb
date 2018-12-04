@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html>
   <head>
-    <title>OLugarDaBelezaFeminina</title>
+    <title>Lugar da Beleza Feminina</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +8,25 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="header">
+      <ul class="menu">
+        <li>
+          <h1 class="app-title">
+            <%= link_to("Pagina Inicial", "/") %>
+          </h1>
+        </li>
+        <li class="menu-item"><%= link_to("Clientes", "/clientes") %></li>
+        <li class="menu-item"><%= link_to("Produtos", "/produtos") %></li>
+        <li class="menu-item"><%= link_to("Servicos", "/servicos") %></li>
+        <li class="menu-item"><%= link_to("Reservas", "/reservas") %></li>
+      </ul>
+
+    </div>
+    <div class="main">
+      <% flash.each do |name, msg| %>
+        <%= content_tag :div, msg, class: "alert alert-info" %>
+      <% end %>
+      <%= yield %>
+    </div>
   </body>
 </html>

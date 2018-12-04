@@ -3,7 +3,7 @@ class CreateServicos < ActiveRecord::Migration[5.1]
     create_table :servicos do |t|
       t.string :nome
       t.float :preco
-      t.string :descricao
+      t.text :descricao
 
       t.timestamps
     end
