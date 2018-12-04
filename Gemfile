@@ -12,6 +12,14 @@ end
 
 gem 'rspec'
 
+gem 'cucumber'
+
+group :test do
+  gem 'cucumber-rails', require: false
+end
+
+gem 'rspec'
+
 # Gem password_secure
 gem 'bcrypt'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
