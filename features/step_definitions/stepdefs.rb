@@ -112,7 +112,7 @@ end
 When("Eu preencho o campo nome com {string} o campo preco com {float} e o campo descricao com {string}") do |nome, preco, descricao|
   fill_in 'servico[nome]', with: nome
   fill_in 'servico[preco]', with: preco
-  fill_in 'servico[descricao]', with: preco
+  fill_in 'servico[descricao]', with: descricao
 
 end
 
@@ -127,7 +127,7 @@ end
 When("Eu preencho o campo nome com {string} o campo preco com {string} e o campo descricao com {string}") do |nome, preco, descricao|
   fill_in 'servico[nome]', with: nome
   fill_in 'servico[preco]', with: preco
-  fill_in 'servico[descricao]', with: preco
+  fill_in 'servico[descricao]', with: descricao
 end
 
 Then("Eu vejo uma mensagem de erro de preco vazio") do
