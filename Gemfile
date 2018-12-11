@@ -12,14 +12,6 @@ end
 
 gem 'rspec'
 
-gem 'cucumber'
-
-group :test do
-  gem 'cucumber-rails', require: false
-end
-
-gem 'rspec'
-
 # Gem password_secure
 gem 'bcrypt'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -37,6 +29,7 @@ gem 'uglifier', '>= 1.3.0'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
+gem 'coffee-script-source', '1.8.0'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
