@@ -10,14 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181202220239) do
+ActiveRecord::Schema.define(version: 20181212180853) do
 
   create_table "clientes", force: :cascade do |t|
     t.string "nome"
     t.string "telefone"
+    t.string "senha"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "password_digest"
+    t.string "email", default: "", null: false
+    t.string "encrypted_password", default: "", null: false
+    t.string "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.string "password"
+    t.index ["reset_password_token"], name: "index_clientes_on_reset_password_token", unique: true
+    t.index ["telefone"], name: "index_clientes_on_telefone", unique: true
   end
 
   create_table "produtos", force: :cascade do |t|
@@ -25,7 +34,7 @@ ActiveRecord::Schema.define(version: 20181202220239) do
     t.string "marca"
     t.float "preco"
     t.integer "quantidade"
-    t.string "descricao"
+    t.text "descricao"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

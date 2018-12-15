@@ -8,20 +8,6 @@
   </head>
 
   <body>
-    <div class="header">
-      <ul class="menu">
-        <li>
-          <h1 class="app-title">
-            <%= link_to("Pagina Inicial", "/") %>
-          </h1>
-        </li>
-        <li class="menu-item"><%= link_to("Clientes", "/clientes") %></li>
-        <li class="menu-item"><%= link_to("Produtos", "/produtos") %></li>
-        <li class="menu-item"><%= link_to("Servicos", "/servicos") %></li>
-        <li class="menu-item"><%= link_to("Reservas", "/reservas") %></li>
-      </ul>
-
-    </div>
     <div class="main">
       <% flash.each do |name, msg| %>
         <%= content_tag :div, msg, class: "alert alert-info" %>
