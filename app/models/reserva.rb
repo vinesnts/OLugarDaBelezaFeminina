@@ -1,6 +1,7 @@
 class Reserva < ApplicationRecord
     has_many :servicos
-    has_one :cliente
+    belongs_to :cliente
+
     validates :servico_id, presence: true
     validates :dataHora, presence: true
     validates :precoTotal, presence: true
