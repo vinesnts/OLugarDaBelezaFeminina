@@ -31,8 +31,6 @@ class ClientesController < ApplicationController
     @cliente = Cliente.new(cliente_params)
     if @cliente.save
       redirect_to @cliente, notice: "Cadastro feito com sucesso!"
-      #tire o método de comentário quando criar o helper.
-      #Usuário depois de cadastrar-se acessa o sistema automaticamente
       sign_in(@cliente)
     else
       render action: :new
