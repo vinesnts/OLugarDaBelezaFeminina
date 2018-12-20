@@ -4,6 +4,8 @@ class CreateReservas < ActiveRecord::Migration[5.1]
       t.integer :servico_id
       t.datetime :dataHora
       t.double :precoTotal
+
+      t.references :cliente
       t.timestamps
     end
   end

@@ -5,5 +5,5 @@ class Reserva < ApplicationRecord
     validates :servico_id, presence: true
     validates :dataHora, presence: true
     validates :precoTotal, presence: true
-    validates :cliente, presence: true
+    validates :cliente_id, presence: true
 end

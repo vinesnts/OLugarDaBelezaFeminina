@@ -9,7 +9,7 @@ module SessionsHelper
 
   def block_access
     if current_cliente.present?
-      redirect_to sessions_new_path
+      redirect_to root_url
     end
   end
 
@@ -21,5 +21,4 @@ module SessionsHelper
     session.delete(:cliente_id)
     @current_cliente = nil
   end
-
 end

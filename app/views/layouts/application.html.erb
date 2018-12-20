@@ -8,6 +8,29 @@
   </head>
 
   <body>
+    <header>
+      <div>
+        <nav>
+          <ul>
+            <% if logged_in? %>
+              <li><%= link_to "Reservas", reservas_path %></li>
+              <li>
+                <ul>
+                  <li><%= link_to "Perfil", current_cliente %></li>
+                  <li><%= link_to "Editar dados", edit_cliente_path(current_cliente) %></li>
+
+                  <li>
+                    <%= link_to "Encerrar Sessão", sign_out_path, method: "delete" %>
+                  </li>
+                </ul>
+              </li>
+            <% else %>
+              <li><%= link_to "Iniciar Sessão", root_path %></li>
+            <% end %>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <div class="main">
       <% flash.each do |name, msg| %>
         <%= content_tag :div, msg, class: "alert alert-info" %>
